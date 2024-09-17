@@ -1,0 +1,8 @@
+<h1>{{ contact.first_name }} {{ contact.last_name }}</h1>
+<p>Email: {{ contact.email }}</p>
+<p>Phone: {{ contact.phone_number }}</p>
+<p>Address: {{ contact.address }}</p>
+
+<a href="{% url 'edit_contact' contact.id %}">Edit</a>
+<a href="{% url 'delete_contact' contact.id %}">Delete</a>
+<a href="{% url 'home' %}">Back to Home</a>
